@@ -1,0 +1,23 @@
+{
+  "name": "vanya-education",
+  "version": "1.0.0",
+  "description": "Educational TypeScript project with C++ integration",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "compile-cpp": "g++ -o bin/program src/cpp/main.cpp",
+    "run-cpp": "npm run compile-cpp && ./bin/program",
+    "clean": "rm -rf dist bin"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "dependencies": {},
+  "keywords": ["education", "typescript", "cpp", "learning"],
+  "author": "",
+  "license": "MIT"
+}
